@@ -18,9 +18,24 @@ public class ClientconnectApplication {
 
 //    RestTemplate
 
+//    @RequestMapping("/member")
+//    String showMembers(){
+//
+//        final String uri = "http://localhost:8080/springrestexample/employees";
+//        RestTemplate restTemplate = new RestTemplate();
+//
+//        Storage result = restTemplate.getForObject(uri, Storage.class);
+//
+//        System.out.println(result);
+//
+//        return "Lista";
+//
+//
+//    }
+
     @RequestMapping("/member")
     String member() {
-        final String uri = "http://localhost:6542/members";
+        final String uri = "andewalle.us-east-2.elasticbeanstalk.com/members";
 
         Member member = new Member ("Glenn", "Andersson", 21);
 
